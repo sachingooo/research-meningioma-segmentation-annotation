@@ -18,9 +18,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
 	<script type="module">
-		import * as nifti from '../release/current/nifti-reader.js';
+		import * as nifti from '../resources/js/external/nifti-reader.js';
 		window.nifti = nifti.default;
 		console.log(nifti);
+		console.log(nifti.decompress);
 	</script>
 </head>
 
@@ -37,7 +38,7 @@
 <!-- external libraries -->
 <script src="https://unpkg.com/virtual-scroller@1.x/bundle/virtual-scroller-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
-<script src="resources/js/external/nifti-reader.js"></script>
+<!-- <script src="resources/js/external/nifti-reader.js"></script> -->
 
 <!-- custom scripts -->
 <script src="resources/js/contentManagement.js"></script>
